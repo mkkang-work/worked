@@ -1,0 +1,256 @@
+//01.html
+.main4column {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li {
+    list-style-type: none;
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-flow: column;
+    text-align: center;
+    position: relative; 
+    &:after {
+      position: absolute;
+      right: 0;
+      display: inline-block;
+      top: calc(50% - 20px);
+      content: ">";
+      color: $blue;
+      font-size: 20px;
+      @include mq(){
+        top: initial;
+        bottom: -25px;
+        left: 0;
+        right: 0;
+        width: 22px;
+        height: 27px;
+        text-align: center;
+        margin: 0 auto;
+        transform: rotate(90deg);
+      }
+    }
+    @include mq(){
+      margin-bottom: 20px;
+    }
+    &:last-of-type {
+      &:after {
+        content: "";
+      }
+      @include mq(){
+        margin-bottom: 0;
+      }
+    }
+    .main4column-ttl {
+      order: 1;
+      color: $blue;
+      width: 100%;
+      text-align: left;
+      font-size: 15px;
+      text-indent: -20px;
+      padding-left: 20px;
+      box-sizing: border-box;
+      &:before {
+        content: "";
+        line-height: 1;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0px;
+      }
+    }
+
+    @for $i from 0 through 4 {
+      &:nth-child(#{$i}) {
+        .main4column-ttl {
+          &:before {
+            background: url("../img/page/01-no#{$i}.png");
+            background-size: 100% auto;
+            background-position: center center;
+          }
+        }
+      }
+    }
+    .main4column-icn {
+      order: 2;
+      width: auto;
+      height: 50px;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      img {
+        height: 100%;
+      }
+    }
+    .main4column-txt {
+      order: 3;
+      width: auto;
+      max-width: 100%;
+      text-align: left;
+      font-size: 13px;
+      margin: auto;
+    }
+    @include mq(){
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: inherit;
+      .main4column-ttl {
+        order: 2;
+        width: calc(100% - 60px);
+      }
+      .main4column-icn {
+        order: 1;
+        width: 40px;
+        height: auto;
+        margin: 0;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .main4column-txt {
+        //display: none;
+      }
+    }
+  }
+}
+.bglemon {
+  background: #fcfaeb;
+}
+
+//17~19.html WEB以外の請求手続案内画面
+.halfbox {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  li {
+    list-style-type: none;
+    width: 49%;
+    button {
+      width: 80%;
+      display: block;
+      margin: 20px auto 0;
+    }
+  }
+  @include mq(){
+    flex-wrap: wrap;
+    li {
+      width: 100%;
+      &:first-of-type {
+        margin: 0 0 10px;
+      }
+      button {
+        width: 95%;
+      }
+    }
+  }
+}
+.call-nb {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 50%;
+  a {
+    font-size: 32px;
+    font-weight: 700;
+    ruby > rt {
+      font-size: 12px;
+      font-weight: 100;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  @include mq(){
+    max-width: 100%;
+    a {
+      font-size: 28px;
+    }
+  }
+}
+.call-open {
+  display: inline-flex;
+  vertical-align: middle;
+  max-width: 47%;
+  &_ttl {
+    background: $disable;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    padding: 0 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+  }
+  @include mq(){
+    max-width: 100%;
+  }
+}
+
+
+//06.htmlのみ
+.spbox {
+  text-align: center;
+  color: $blue;
+  @include mq(){
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+
+
+//メンテナンスページのみ
+.p30 {
+  padding: 15px 30px;
+  box-sizing: border-box;
+}
+.maintenance-ttl {
+  font-size: 30px;
+  text-align: center;
+  margin: 60px 0 20px;
+  width: 100%;
+  font-weight: 100;
+  position: relative;
+  box-sizing: border-box;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    top: -60px;
+    margin: 0 auto;
+  }
+  &.orange {
+    color: $orange;
+    &:before {
+      background: url(../img/common/caution-orange.png) no-repeat center center;
+      background-size: 100% auto;
+    }
+  }
+  &.blue {
+    color: $blue;
+    &:before {
+      background: url(../img/common/caution.png) no-repeat center center;
+      background-size: 100% auto;
+    }
+  }
+  @include mq(){
+    font-size: 20px;
+    margin: 50px 0 10px;
+    &:before {
+      top: -50px;
+    }
+  }
+}

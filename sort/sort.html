@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index,follow,noodp">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Content-Language" content="jp">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <!-- HTML Meta Tags -->
+    <title>〇〇〇〇〇〇〇〇</title>
+    <meta name="description" content="〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="〇〇〇〇〇〇〇〇">
+    <meta itemprop="description" content="〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇">
+    <meta itemprop="image" content="">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://bit.ly/3aOR4qQ">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="〇〇〇〇〇〇〇〇">
+    <meta property="og:description" content="〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇">
+    <meta property="og:image" content="https://standingwater.github.io/sort/assets/img/ogp.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="〇〇〇〇〇〇〇〇">
+    <meta name="twitter:description" content="〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇">
+    <meta name="twitter:image" content="https://standingwater.github.io/sort/assets/img/ogp.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
+    <link rel="stylesheet" href="assets/css/sort.css">
+
+    <script src = "assets/js/html2canvas.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <h1>〇〇〇〇〇〇〇〇</h1>
+      <h2 id="battleNumber"></h2>
+      <div id="mainTable">
+        <div id="leftField"></div>
+        <div class="centers">
+          <div class="middleField">
+            〇〇〇〇
+          </div>
+          <div class="middleField">
+            〇〇〇〇〇〇〇〇
+          </div>
+        </div>
+        <div id="rightField"></div>
+      </div>
+
+      <div class="resultField">
+        <div class="resultField_captureArea">
+          <p></p>
+          <div id="resultField"></div>
+        </div>
+        <p class="resultField_twit">
+          <a class="twitup" href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="entypo-twitter" width="32" height="32" fill="currentColor"><g><path d="M17.316 6.246c.008.162.011.326.011.488 0 4.99-3.797 10.742-10.74 10.742-2.133 0-4.116-.625-5.787-1.697a7.577 7.577 0 0 0 5.588-1.562 3.779 3.779 0 0 1-3.526-2.621 3.858 3.858 0 0 0 1.705-.065 3.779 3.779 0 0 1-3.028-3.703v-.047a3.766 3.766 0 0 0 1.71.473 3.775 3.775 0 0 1-1.168-5.041 10.716 10.716 0 0 0 7.781 3.945 3.813 3.813 0 0 1-.097-.861 3.773 3.773 0 0 1 3.774-3.773 3.77 3.77 0 0 1 2.756 1.191 7.602 7.602 0 0 0 2.397-.916 3.789 3.789 0 0 1-1.66 2.088 7.55 7.55 0 0 0 2.168-.594 7.623 7.623 0 0 1-1.884 1.953z"/></g></svg>〇〇〇Twitter〇〇〇</a>(〇〇10〇〇〇)〇
+          <span class="resultImg">〇〇〇〇〇〇〇〇〇〇〇〇</span>
+        </p>
+      </div>
+      <div class="checkarea">
+        <span class="checkareaClose">
+          <span></span>
+          <span></span>
+        </span>
+        <h3>
+          <span class="slidetg">範囲の確認(クリック)</span>
+        </h3>
+        <div class="acordionArea">
+          <button class="submit">スタート</button>
+          <button class="reset">リセット</button>
+          <label><input type="checkbox" name="checkresetall" value="00" checked>〇〇〇〇〇〇1</label>
+          <p>〇〇〇〇
+            <label><input type="radio" name="specialSelect"  class="pi" value="〇〇">〇〇</label>&nbsp;
+            <label><input type="radio" name="specialSelect" class="pi-l" value="〇〇〇〇">〇〇〇〇</label>&nbsp;
+            <label><input type="radio" name="specialSelect" class="pi-r" value="〇〇〇〇">〇〇〇〇</label>&nbsp;
+            <label><input type="radio" name="specialSelect" class="ca" value="〇〇">〇〇</label>&nbsp;
+            <label><input type="radio" name="specialSelect" class="lh" value="〇〇〇">〇〇〇</label>&nbsp;
+            <label><input type="radio" name="specialSelect" class="rh" value="〇〇〇">〇〇〇</label>&nbsp;
+            <label><input type="radio" name="specialSelect" class="cp" value="〇〇〇〇〇">〇〇〇〇〇</label>&nbsp;
+            <label><input type="radio" name="specialSelect" class="tm" value="〇〇">〇〇</label><br>
+            <label><input type="radio" name="specialSelect" class="y1" value="1〇">1〇</label>
+            <label><input type="radio" name="specialSelect" class="y2" value="2〇">2〇</label>
+            <label><input type="radio" name="specialSelect" class="y3" value="3〇">3〇</label>            
+            <label><input type="radio" name="specialSelect" class="ob" value="OB">OB</label>             
+          </p>
+          <div class="checkarea_uls">
+            <ul>
+              <li class="categorise">〇〇2〇<label><input type="checkbox" name="checkreset" value="00" checked>〇〇〇〇〇〇</label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-l lh y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh y2" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b2 rh y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b3 rh y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">(〇〇〇〇 〇〇〇)</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="pi fs pi-r rh y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">(〇〇〇〇〇 〇〇〇〇)</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="ss lh y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="ca rh y2" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="pi fs y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="fs y2" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇〇</span>
+              </label></li>
+            </ul>
+            <ul>
+              <li class="categorise">〇〇3〇<label><input type="checkbox" name="checkreset" value="00" checked>〇〇〇〇〇〇</label></li>
+              <li><label><input type="checkbox" name="select" class="cp ca lh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="ss sh rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b1 rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="fs rf lh y3" value="〇〇〇〇〇" checked>〇〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇〇</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="b3 rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="fs rh y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="fs y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇〇</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="ss lh y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="ca rh y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b2 lh y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b1 rh y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="pi fs y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="fs y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span>
+              </label></li>
+              <li><label><input type="checkbox" name="select" class="fs rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span>
+              </label></li>
+            </ul>
+            <ul>
+              <li class="categorise">〇〇1〇<label><input type="checkbox" name="checkreset" value="00" checked>〇〇〇〇〇〇</label></li>
+              <li><label><input type="checkbox" name="select" class="ca rh y1" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ca lh y1" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="rh y1" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b2 lh y1" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-l y1" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh y1" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ss rh y1" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="fs lh y1" value="〇〇〇〇〇" checked>〇〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+            </ul>
+            <ul>
+              <li class="categorise">〇〇OB<label><input type="checkbox" name="checkreset" value="00" checked>〇〇〇〇〇〇</label></li>
+              <li><label><input type="checkbox" name="select" class="cp b1 rh ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="fs rh ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b3 rh ob" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b2 lh ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh ob" value="〇〇〇〇〇" checked>〇〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ca rh ob" value="〇〇〇〇〇〇〇〇" checked>〇〇〇〇〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ca rh ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="fs rh ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="fs rh ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ss rh ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ob" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ob"value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇</span></label></li>
+            </ul>
+            <ul>
+              <li class="categorise">〇〇〇〇〇〇55<label><input type="checkbox" name="checkreset" value="00" checked>〇〇〇〇〇〇</label></li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+                      
+              <li><label><input type="checkbox" name="select" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇</span></label></li>
+            </ul>
+            
+            <ul>
+              <li class="categorise">〇〇〇〇66<label><input type="checkbox" name="checkreset" value="00" checked>〇〇〇〇〇〇</label></li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+                      
+              <li><label><input type="checkbox" name="select" class="pi pi-l lh y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="fs rh y3" value="〇〇〇〇〇〇〇〇" checked>〇〇〇〇〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ss rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="cp y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b1 rh y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b3 rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ca rh y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh y1" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="y1" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="y1" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="y1" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇〇〇</span></label></li>
+                      
+              <li><label><input type="checkbox" name="select" class="ca rh ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b3 ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b2 ob" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+            </ul>
+
+            <ul>
+              <li class="categorise">〇〇〇〇777<label><input type="checkbox" name="checkreset" value="00" checked>〇〇〇〇〇〇</label></li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+            
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="cp b1 lh y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh ob" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="cp b3 rh ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="fs lh y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ca y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="y3"value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇〇〇" class="y2" checked>〇〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="y1" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="y1" class="pi" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="y1" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇〇</span></label></li>
+            </ul>
+            <ul>
+              <li class="categorise">〇〇〇〇888<label><input type="checkbox" name="checkreset" value="00" checked>〇〇〇〇〇〇</label></li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+            
+              <li><label><input type="checkbox" name="select" class="b3 pi pi-r rh y2" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi b1 pi-r rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b1 pi pi-r ca b3 rh y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="fs ca pi pi-r lh y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="cp fs y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-l y1" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇" class="y1"checked>〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇〇" class="y1" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇〇" class="y1" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+            </ul>
+            <ul>
+              <li>〇〇999<label><input type="checkbox" name="checkreset" value="00" checked>〇〇〇〇〇〇</label></li>
+
+
+              <li class="categorise">〇〇〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh ob" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇</span></label></li>
+
+              <li class="categorise">〇〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" class="rh ob" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+
+              <li class="categorise">〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+                      
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇〇 / 〇〇 〇〇〇〇〇〇〇</span></label></li>
+                      
+              
+              <li class="categorise">〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇〇</span></label></li>
+                      
+              <li class="categorise">〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+                      
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh ob" value="〇〇〇〇〇" checked>〇〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+
+            </ul>
+            <ul>
+              <li>〇〇10<label><input type="checkbox" name="checkreset" value="00" checked>〇〇〇〇〇〇</label></li> 
+              <li class="categorise">〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇</span></label></li>
+                      
+              <li><label><input type="checkbox" name="select" class="cp ca lh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-l rh y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b1 rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇〇</span></label></li>
+
+              <li class="categorise">〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-l lh y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="cp ca lh y3" value="〇〇〇" checked>〇〇〇 <span class="yomikata">〇〇〇〇 〇〇〇〇</span></label></li>
+                      
+              <li class="categorise">〇〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇</span></label></li>
+                      
+              <li class="categorise">〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇〇〇" checked>〇〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r y3" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇〇 〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="b1 rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="fs rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+            </ul>
+
+            <ul>
+              <li>〇〇〇〇11<label><input type="checkbox" name="checkreset" value="00" checked>〇〇〇〇〇〇</label></li>
+              <li><label><input type="checkbox" name="select" class="y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇" class="ob"checked>〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="J〇〇〇〇〇〇M" checked>J〇〇〇〇〇〇M</label></li>
+                      
+              <li><label><input type="checkbox" name="select" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇〇〇" checked>〇〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇〇</span></label></li>
+            </ul>
+
+            <ul>
+              <li>12〇〇〇〇〇〇<label><input type="checkbox" name="checkreset" value="00" checked>〇〇〇〇〇〇</label></li>
+              <li class="categorise">〇〇〇〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="ca y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇〇 〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="cp b2" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇</span></label></li>
+                      
+              <li class="categorise">〇〇〇〇〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" value="〇〇〇" checked>〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇</span></label></li>
+
+              <li class="categorise">〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" class="ca y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r y2" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇〇</span></label></li>
+
+              <li class="categorise">〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" class="tm" value="〇〇〇〇〇〇" checked>〇〇〇〇〇〇<span class="yomikata">〇〇〇〇 〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="fs lh y3" value="〇〇〇〇〇" checked>〇〇〇〇〇<span class="yomikata">〇〇〇 〇〇〇〇〇〇〇</span></label></li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r" value="〇〇〇〇〇" checked>〇〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇〇〇</span></label></li>
+                      
+              <li class="categorise">〇〇〇〇</li>
+              <li><label><input type="checkbox" name="select" class="pi pi-r rh y3" value="〇〇〇〇" checked>〇〇〇〇<span class="yomikata">〇〇〇〇〇〇〇〇〇</span></label></li>
+            </ul>
+          </div>
+          
+          <small>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</small>
+          <textarea id="textarea1" rows="5" placeholder="〇〇〇〇〇〇〇〇〇&#13;&#10;〇〇〇〇〇〇〇&#13;&#10;〇〇〇〇〇〇〇&#13;&#10;〇〇"></textarea>
+          <button class="submit">〇〇〇〇</button>
+          <button class="reset">〇〇〇〇〇〇〇</button>
+        </div>
+      </div>
+      
+
+    </main>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src = "assets/js/sort.js"></script>
+
+</html>

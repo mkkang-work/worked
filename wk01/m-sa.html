@@ -1,0 +1,27 @@
+<div class="modalcontents-main">
+  <h2 class="ta-C">住所を選択してください</h2>
+  <div class="select-wrap">
+    <ul class="select-list">
+      <li class="select-listitem">東京都赤坂1丁目</li>
+      <li class="select-listitem">東京都赤坂2丁目</li>
+      <li class="select-listitem">東京都赤坂3丁目</li>
+      <li class="select-listitem">東京都赤坂4丁目</li>
+      <li class="select-listitem">東京都赤坂5丁目</li>
+      <li class="select-listitem checked">東京都赤坂6丁目</li>
+      <li class="select-listitem">東京都赤坂7丁目</li>
+      <li class="select-listitem">東京都赤坂8丁目</li>
+      <li class="select-listitem">東京都赤坂9丁目</li>
+    </ul>
+  </div>
+  <div class="mt30 modalcontents-btns ta-C">
+    <button class="modalcancel">キャンセル</button>
+    <button class="ml20 modalactive bgyellow">決定</button>
+  </div>
+</div>
+<script>
+  $(".modalcancel").on('click',function(){
+    $('.modal').removeClass('active');
+    $('.modalcontents').empty();
+    $('html,body').removeClass('bglock');
+  });
+</script>

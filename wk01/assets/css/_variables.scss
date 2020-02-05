@@ -1,0 +1,19 @@
+$blue : #3281dd;
+$disable : #c9c9c9;
+$orange: #ff5722;
+$red: #f00;
+$yellow: rgba(253, 142, 0, 1);
+$sky: rgba(129, 212, 252, 1);
+$white: #fff;
+$initial: initial;
+
+$breakpoints: (
+  'md': 'screen and (max-width: 767px)',
+  'pc': 'screen and (max-width: 1023px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

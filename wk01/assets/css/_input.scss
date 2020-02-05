@@ -1,0 +1,174 @@
+.check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  & + label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    padding-left: 1.25em;
+    background: $white;
+    border: 2px solid $disable;
+    border-radius: 5px;
+    color: $disable;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0 10px 0 30px;
+    height: 45px;
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 5px;
+      width: 1em;
+      height: 1em;
+      margin: auto;
+      border: 2px solid $disable;
+      border-radius: 50%;
+    }
+  }
+  &:focus + label {
+    box-shadow: 0 0 5px #1589ee;
+  }
+  &:checked + label {
+    background: $blue;
+    border: 2px solid $blue;
+    color: $white;
+    &:before {
+      border: 2px solid $white;
+      background: url("../img/common/checked-1.png") $white no-repeat center center;
+      background-size: 105% auto;
+    }
+  }
+  &:disabled,
+  & + label[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.financialSearch-wrap {
+
+  .check {
+    & + label {
+      padding: 0 10px;
+      justify-content: center;
+      &:before {
+        content: none;
+      }
+      @include mq(){
+        padding: 0;
+      }
+    }
+  }
+}
+
+button {
+  max-width: 350px;
+  display: inline-block;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  color: $white;
+  font-size: 16px;
+  background: #b5b5b5;
+  @include mq(){
+    max-width: 95%;
+    width: 95%;
+    margin: 0 auto;
+    &.spsmall {
+      max-width: 95%;
+      width: 95%;
+      margin: 0 auto;
+    }
+    &.spauto {
+      width: auto;
+    }
+  }
+  &.form_plus {
+    padding: 8px 20px 12px 5px;
+    position: relative;
+    &:before {
+      content: "+";
+      display: inline-block;
+      vertical-align: bottom;
+      margin: 0 5px 0 0;
+      color: #fff;
+      font-size: 30px;
+      width: 23px;
+      height: 24px;
+      line-height: 1;
+    }
+    &:focus {
+      &:before {
+        outline: 0;
+      }
+    }
+  }  
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 5px #1589ee;
+  }
+}
+
+input, select {
+  height: 45px;
+  border: 1px solid $disable;
+  border-radius: 5px;
+  box-sizing: border-box;
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 5px #1589ee;
+  }
+}
+input {
+  padding: 0 10px;
+}
+input, textarea {
+  &::placeholder {
+    color: $disable;
+  }
+}
+/* IE */
+textarea:-ms-input-placeholder, 
+input:-ms-input-placeholder {
+  color: $disable;
+}
+
+/* Edge */
+textarea::-ms-input-placeholder,
+input::-ms-input-placeholder {
+  color: $disable;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0 23px 0 10px;
+  &::-ms-expand {
+    display: none;
+  }
+  background: url(../img/common/select-off.png) no-repeat right 5px center;
+  background-size: 15px auto;
+}
+
+textarea {
+  padding: 10px;
+  box-sizing: border-box;
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 5px #1589ee;
+  }
+}

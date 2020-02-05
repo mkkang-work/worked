@@ -1,0 +1,99 @@
+<div class="modalcontents-main">
+  <h2 class="ta-L">金融機関検索</h2>
+  <p class="ta-L mt30">以下の銀行の場合、銀行名のボタンを押してください。</p>
+  <ul class="financialSearch-wrap w100p mt10">
+    <li class="financialSearch-item">
+      <input type="radio" id="bankName_1" name="bankName" value="bankName_1" class="check">
+      <label for="bankName_1" class="w100p">みずほ銀行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="bankName_2" name="bankName" value="bankName_2" class="check">
+      <label for="bankName_2" class="w100p">三菱東京UFJ銀行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="bankName_3" name="bankName" value="bankName_3" class="check">
+      <label for="bankName_3" class="w100p">三井住友銀行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="bankName_4" name="bankName" value="bankName_4" class="check">
+      <label for="bankName_4" class="w100p">りそな銀行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="bankName_5" name="bankName" value="bankName_5" class="check">
+      <label for="bankName_5" class="w100p">埼玉りそな銀行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="bankName_6" name="bankName" value="bankName_6" class="check">
+      <label for="bankName_6" class="w100p">楽天銀行</label>
+    </li>
+  </ul>
+
+  <p class="ta-L mt20">上記以外の金融機関の場合、50音のボタンを押してください。</p>
+  <ul class="financialSearch-wrap w90p order50 mt10">
+    <li class="financialSearch-item">
+      <input type="radio" id="order50_1" name="order50" value="order50_1" class="check">
+      <label for="order50_1" class="w100p">あ行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="order50_2" name="order50" value="order50_2" class="check">
+      <label for="order50_2" class="w100p">か行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="order50_3" name="order50" value="order50_3" class="check">
+      <label for="order50_3" class="w100p">さ行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="order50_4" name="order50" value="order50_4" class="check">
+      <label for="order50_4" class="w100p">た行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="order50_5" name="order50" value="order50_5" class="check">
+      <label for="order50_5" class="w100p">な行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="order50_6" name="order50" value="order50_6" class="check">
+      <label for="order50_6" class="w100p">は行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="order50_7" name="order50" value="order50_7" class="check">
+      <label for="order50_7" class="w100p">ま行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="order50_8" name="order50" value="order50_8" class="check">
+      <label for="order50_8" class="w100p">や行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="order50_9" name="order50" value="order50_9" class="check">
+      <label for="order50_9" class="w100p">ら行</label>
+    </li>
+    <li class="financialSearch-item">
+      <input type="radio" id="order50_10" name="order50" value="order50_10" class="check">
+      <label for="order50_10" class="w100p">わ行</label>
+    </li>
+  </ul>
+  <div class="ta-C mt20">
+    <select class="w90p">
+      <option>金融機関を選択してください</option>
+      <option>八十二銀行</option>
+      <option>東日本銀行</option>
+      <option>肥後銀行</option>
+      <option>百五銀行</option>
+      <option>百十四銀行</option>
+      <option>広島銀行</option>
+      <option>福井銀行</option>
+      <option>福岡銀行</option>
+    </select>
+  </div>
+
+  <div class="mt30 modalcontents-btns ta-C">
+    <button class="modalcancel bgyellow">決定</button>
+    <button class="modalcancel">閉じる</button>
+  </div>
+</div>
+<script>
+  $(".modalcancel").on('click',function(){
+    $('.modal').removeClass('active');
+    $('.modalcontents').empty();
+    $('html,body').removeClass('bglock');
+  });
+</script>

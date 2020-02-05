@@ -1,0 +1,177 @@
+.modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  display: none;
+
+  .modalbg {
+    background: $blue;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+
+  .modalcontents {
+    z-index: 10;
+    position: fixed;
+    top: 15%;
+    left: 0;
+    right: 0;
+    width: 700px;
+    max-height: 60vh;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #fff;
+    margin: auto;
+    padding: 30px 20px;
+    text-align: center;
+    display: none;
+    @include mq(){
+      width: 100%;
+      max-height: initial;
+      height: calc(100vh - 40px);
+      padding: 10px;
+      top: 40px;
+    }
+  }
+  &.active {
+    display: block;
+    .modalcontents {
+      display: block;
+    }
+  }
+  span.modalcancel {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    right: 0;
+    top: -40px;
+    cursor: pointer;
+    &:before, 
+    &:after {
+      content: "";
+      width: 52px;
+      height: 2px;
+      background: $white;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -6px;
+      margin: auto;
+    }
+    &:before {
+      transform: rotate(45deg);
+      transform-origin: center center;
+    }
+    &:after {
+      transform: rotate(-45deg);
+      transform-origin: center center;
+    }
+  }
+  .modalcontents-main {
+    max-height: calc(60vh - 40px);
+    overflow-y: auto;
+    @include mq(){
+      max-height: calc(100vh - 60px);
+    }
+  }
+}
+
+.select-wrap {
+  width: 90%;
+  margin: 0 auto;
+  .select-list {
+    width: 100%;
+    height: 300px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: none;
+    box-shadow: 0 0 0 $white;
+    border: 1px solid $disable;
+    border-radius: 5px;
+    text-align: left;
+    overflow-y: auto;
+    .select-listitem {
+      list-style-type: none;
+      cursor: pointer;
+      &.checked {
+        background: $disable;
+      }
+    }
+    @include mq(){
+      height: 240px;
+    }
+  }
+}
+.modalcontents-btns {
+  button {
+    min-width: 220px;
+    &:nth-child(2){
+      margin-left: 20px;
+    }
+  }
+  @include mq(){
+    button {
+      width: 100%;
+      margin: 0 auto 10px;
+      &:nth-child(2){
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.financialSearch-wrap {
+  margin: 0 auto;
+  padding: 0;
+  li {
+    list-style-type: none;
+    padding: 0;
+  }
+  .financialSearch-item {
+    display: inline-block;
+    margin: 0 15px 15px 0;
+    width: 30%;
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+    @include mq(){
+      width: 47%;
+      margin: 0 5px 5px 0;
+      &:nth-of-type(3n) {
+        margin-right: 5px;
+      }
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+  &.order50 {
+    text-align: left;
+    .financialSearch-item {
+      width: 18%;
+      margin: 0 5px 5px 0;
+      &:nth-of-type(5n) {
+        margin-right: 0;
+      }
+      @include mq(){
+        width: 30%;
+        &:nth-of-type(5n) {
+          margin-right: 5px;
+        }
+        &:nth-of-type(3n) {
+          margin-right: 0;
+        }        
+      }
+    }
+  }
+}

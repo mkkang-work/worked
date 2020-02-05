@@ -1,0 +1,238 @@
+/* ヘルパークラス */
+
+@for $i from 0 through 15 {
+  .mt#{$i * 5} {
+    margin-top: #{$i * 5}px;
+
+    @include mq() {
+      margin-top: #{$i * 3}px;
+    }
+  }
+
+  .ml#{$i * 5} {
+    margin-left: #{$i * 5}px;
+
+    @include mq() {
+      margin-left: #{$i * 3}px;
+    }
+  }
+
+  .mb#{$i * 5} {
+    margin-bottom: #{$i * 5}px;
+
+    @include mq() {
+      margin-bottom: #{$i * 3}px;
+    }
+  }
+
+  .mr#{$i * 5} {
+    margin-right: #{$i * 5}px;
+
+    @include mq() {
+      margin-right: #{$i * 3}px;
+    }
+  }
+}
+
+@for $i from 0 through 15 {
+  .pt#{$i * 5} {
+    padding-top: #{$i * 5}px;
+
+    @include mq() {
+      padding-top: #{$i * 3}px;
+    }
+  }
+
+  .pl#{$i * 5} {
+    padding-left: #{$i * 5}px;
+
+    @include mq() {
+      padding-left: #{$i * 3}px;
+    }
+  }
+
+  .pb#{$i * 5} {
+    padding-bottom: #{$i * 5}px;
+
+    @include mq() {
+      padding-bottom: #{$i * 3}px;
+    }
+  }
+
+  .pr#{$i * 5} {
+    padding-right: #{$i * 5}px;
+
+    @include mq() {
+      padding-right: #{$i * 3}px;
+    }
+  }
+}
+
+@for $i from 0 through 25 {
+  .w#{$i * 25} {
+    width: #{$i * 25}px;
+  }
+}
+@for $i from 0 through 20 {
+  .w#{$i * 5}p {
+    width: #{$i * 5%};
+  }
+}
+
+.indent {
+  display: inline-block;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+.ta-L {
+  text-align: left;
+}
+
+.ta-C {
+  text-align: center;
+}
+
+.ta-R {
+  text-align: right;
+}
+
+.va-T {
+  vertical-align: top;
+}
+
+.va-M {
+  vertical-align: middle;
+}
+
+.va-B {
+  vertical-align: bottom;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.onlysp {
+  display: none;
+  @include mq() {
+    display: inline-block;
+  }
+}
+
+.onlypc {
+  display: inline-block;
+  @include mq() {
+    display: none;
+  }
+}
+
+.txtblue {
+  color: $blue;
+}
+.txtgray {
+  color: $disable;
+}
+.txtorange {
+  color: $orange;
+}
+.txtred {
+  color: $red;
+}
+.txtinta {
+  color: $initial;
+}
+
+.bgblue {
+  background-color: $blue;
+}
+.bggray {
+  background-color: $disable;
+}
+.bgorange {
+  background-color: $orange;
+}
+.bgyellow {
+  background-color: $yellow;
+}
+.bginta {
+  background-color: $initial;
+}
+
+.iconlink {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  &.pdf {
+    &:after {
+      content: "";
+      display: inline-block;
+      background: url(../img/common/ico_pdf_01.png) no-repeat center center;
+      background-size: 16px auto;
+      vertical-align: top;
+      width: 1em;
+      height: 1em;
+      margin: 0 5px;
+    }
+  }
+  &.question {
+    &:before {
+      content: "";
+      display: inline-block;
+      background: url(../img/common/question.png) no-repeat center center;
+      background-size: 16px auto;
+      width: 1.1em;
+      height: 1.1em;
+      vertical-align: bottom;
+      margin: 0 5px;
+      @include mq() {
+        margin: 0 5px 0 0;
+      }
+    }
+  }
+  &.camera {
+    &:before {
+      content: "";
+      display: inline-block;
+      background: url(../img/common/ico_camera.png) no-repeat center center;
+      background-size: 18px auto;
+      width: 1.1em;
+      height: 1.1em;
+      vertical-align: bottom;
+      margin: 0 5px;
+    }
+  }
+  &.leftarrow {
+    &:before {
+      content: "";
+      margin-right: 1px;
+      display: inline-block;
+      border: 4px solid transparent;
+      border-right-width: 5px;
+      border-left: 5px solid $blue;
+    }
+  }
+}
+.iconExclamation {
+  &:before {
+    content: "";
+    display: inline-block;
+    background: url(../img/common/ico_exclamation.png) no-repeat center center;
+    background-size: 24px auto;
+    width: 1.1em;
+    height: 1.1em;
+    margin: 4px 5px 0 0;
+    vertical-align: top;
+    @include mq() {
+      background-size: 20px auto;
+    }
+  }
+}
+
+.spw100p {
+  @include mq() {
+    width: 100%;
+  }
+}

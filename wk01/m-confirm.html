@@ -1,0 +1,15 @@
+<div class="modalcontents-main ta-C">
+  <h2 class="maintenance-ttl orange">ご確認ください</h2>
+  <p>アップロードしたこの「必要書類」を削除しますか？</p>
+  <div class="mt30 modalcontents-btns">
+    <button class="modalcancel bgyellow">はい</button>
+    <button class="modalcancel bgblue">いいえ</button>
+  </div>
+</div>
+<script>
+  $(".modalcancel").on('click',function(){
+    $('.modal').removeClass('active');
+    $('.modalcontents').empty();
+    $('html,body').removeClass('bglock');
+  });
+</script>
